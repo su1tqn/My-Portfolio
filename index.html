@@ -5,13 +5,13 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body id="top">
   <!-- Header and navigation -->
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#hero">My Portfolio</a>
+      <a class="brand" href="#top">My Portfolio</a>
       <nav class="site-nav">
-        <a href="#hero">Home</a>
+        <a href="#hero-content">Home</a>
         <a href="#skills">Skills</a>
         <a href="#work">Projects</a>
         <a href="#contacting">Contact</a>
@@ -19,13 +19,26 @@
     </div>
   </header>
 
-
   <main>
     <!-- Hero section -->
     <section class="hero" id="hero">
       <img class="hero-bg" src="img/hero-bg.jpg" alt="Hero background image">
       <div class="hero-overlay"></div>
-      <div class="container hero-content">
+
+      <!-- First section with animated welcome text -->
+      <div class="f-section" id="f-section">
+        <h1 class="f-page">
+          <span>W</span>
+          <span>e</span>
+          <span>l</span>
+          <span>c</span>
+          <span>o</span>
+          <span>m</span>
+          <span>e</span>
+        </h1>
+      </div>
+      
+      <div class="container hero-content" id="hero-content">
         <div class="hero-text">
           <span class="hero-label">Upcoming Software Developer & Student-Athlete</span>
           <h1>Hello, I’m Sultan Bakare</h1>
@@ -73,18 +86,6 @@
     </section>
 
 
-    <!-- Call to action section -->
-    <section class="cta-banner" id="contacting">
-      <div class="container cta-content">
-        <div>
-          <h2>Ready to bring your ideas online?</h2>
-          <p> Feel free to check out and message me on LinkedIn profile!</p>
-        </div>
-        <a class="btn-secondary" href="https://www.linkedin.com/in/sultan-bakare/" target="_blank">Get In Touch</a>
-      </div>
-    </section>
-
-
     <!-- Portfolio / project section -->
     <section class="work-preview" id="work">
       <div class="container">
@@ -106,7 +107,7 @@
               As an early student working in the computer science field I wanted to make sure that I dabbled in all aspects of what it means to develop softawre. The Rice University database project, short for OwlDb, served as a driving motor in developping the right skills I needed when tackling backend programming problems. Primialry built with Golang, taught me how to build an noSQL database that manages, stores, and retrieves data through CRUD commands.   
             </p>
           </article>
-          <article>
+          <article class="project-card">
             <h3>Project 3: Porfolio</h3>
             <p>
               And finally my porfolio. I desgined this page to not only showcase my creative skills but to also tell a story in my own style. The beauty of coding a webpage is that it allows developer to paint on an empty canvas. This page is my heart initselfs and showcase how i think, process, and bring all my ideas to live.
@@ -114,6 +115,18 @@
             <a href="link"></a>
           </article>
         </div>
+      </div>
+    </section>
+
+    
+        <!-- Call to action section -->
+    <section class="cta-banner" id="contacting">
+      <div class="container cta-content">
+        <div>
+          <h2>Ready to bring your ideas online?</h2>
+          <p> Feel free to check out and message me on LinkedIn profile!</p>
+        </div>
+        <a class="btn-secondary" href="https://www.linkedin.com/in/sultan-bakare/" target="_blank">Get In Touch</a>
       </div>
     </section>
   </main>
@@ -126,3 +139,6 @@
     </div>
   </footer>
 </body>
+
+<!-- Notes and ideas for next. I want to add a socials part instead of the cpntact part. I also want to add a flipping animation
+ to my hero banner such that it looks really good. also i want to add a cool story to the back of my hero card and make it such that on its click it flips and shows a short story about me. Obviously add a click animation to it. ok yyou did good now also remember to add socials at the bottom-->
